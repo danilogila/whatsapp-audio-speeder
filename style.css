@@ -1,0 +1,12 @@
+.btn-speed {
+  color: #919191;
+  background-color: transparent;
+
+  font-weight: 500;
+  border-radius: 50%;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(145, 145, 145);
+  font-size: 12px;
+}
