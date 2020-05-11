@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "WhatsApp Audio Speed",
-  "version": "0.1",
+  "version": "0.2.0",
   "background": {
     "persistent": false,
     "scripts": ["content.js"]
@@ -17,12 +17,12 @@
   ],
   "browser_action": {
     "default_title": "SpeedUp WhatsApp Audios!",
-    "default_icon": "assets/whatsapp-icon-16.png",
+    "default_icon": "assets/whatsapp-speed-icon.png",
     "icons": { 
-      "16": "assets/whatsapp-icon-16.png",
-      "32": "assets/whatsapp-icon-32.png",
-      "64": "assets/whatsapp-icon-64.png",
-      "128": "assets/whatsapp-icon-128.png" 
+      "16": "assets/whatsapp-speed-icon.png",
+      "32": "assets/whatsapp-speed-icon.png",
+      "64": "assets/whatsapp-speed-icon.png",
+      "128": "assets/whatsapp-speed-icon.png" 
     }
   },
   "permissions": [
