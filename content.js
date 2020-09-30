@@ -1,24 +1,32 @@
 const buttonClassName = "btn-speed"
 
 function increaseAudioRate (){
-      let playbackRate = 1;
+      let playbackRatePosition = 1;
+
+      let playbackRate = {
+        "1": 1,
+        "2": 1.75,
+        "3": 2,
+        "4": 2.5,
+        "5": 3
+      }
   
       return function(event) {
         let audios = document.querySelectorAll("audio")
 
         if (audios.length === 0){
-          playbackRate = 1;
+          playbackRatePosition = 1;
           return
         }
 
-        playbackRate += 0.5;
-        if (playbackRate > 3.0){
-          playbackRate = 1
+        playbackRatePosition += 1;
+        if (playbackRatePosition > 5){
+          playbackRatePosition = 1
         }
 
-        document.getElementsByClassName(buttonClassName)[0].innerText = `${playbackRate} X`
+        document.getElementsByClassName(buttonClassName)[0].innerText = `${playbackRate[playbackRatePosition]} X`
         audios.forEach((audio) =>{
-          audio.playbackRate = playbackRate
+          audio.playbackRate = playbackRate[playbackRatePosition]
         })
       };
   }
