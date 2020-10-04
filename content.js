@@ -5,10 +5,11 @@ function increaseAudioRate (){
 
       let playbackRate = {
         "1": 1,
-        "2": 1.75,
-        "3": 2,
-        "4": 2.5,
-        "5": 3
+        "2": 1.5,
+        "3": 1.75,
+        "4": 2,
+        "5": 2.5,
+        "6": 3
       }
   
       return function(event) {
@@ -20,7 +21,7 @@ function increaseAudioRate (){
         }
 
         playbackRatePosition += 1;
-        if (playbackRatePosition > 5){
+        if (playbackRatePosition > 6){
           playbackRatePosition = 1
         }
 
