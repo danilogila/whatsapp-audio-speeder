@@ -5,13 +5,16 @@ function increaseAudioRate (){
 
       let playbackRate = {
         "1": 1,
-        "2": 1.5,
-        "3": 1.75,
-        "4": 2,
-        "5": 2.5,
-        "6": 3
+        "2": 1.25,
+        "3": 1.5,
+        "4": 1.75,
+        "5": 2,
+        "6": 2.25,
+        "7": 2.5,
+        "8": 2.75,
+        "9": 3
       }
-  
+
       return function(event) {
         let audios = document.querySelectorAll("audio")
 
@@ -21,7 +24,7 @@ function increaseAudioRate (){
         }
 
         playbackRatePosition += 1;
-        if (playbackRatePosition > 6){
+        if (playbackRatePosition > 9){
           playbackRatePosition = 1
         }
 
@@ -38,7 +41,7 @@ let interval = setInterval(() => {
 
   if(actionsMenu){
     let menu = actionsMenu.childNodes[1].firstChild
- 
+
     clearInterval(interval)
 
     const button = document.createElement("button")
